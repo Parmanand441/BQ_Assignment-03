@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3 Marksheet</title>
+</head>
+<body>
+    <script>
+        
+        //Create complete marksheet using user Input and if else and else if.
+
+let English = Number(prompt("Enter marks of English "));
+let Bio = Number(prompt("Enter marks of Bio"));
+let Social_Science = Number(prompt("Enter marks of Social_Science"));
+
+var totalMarks = English + Bio + Social_Science;
+let averageMarks = totalMarks / 3;
+let grade =null;
+if (averageMarks >= 90) {
+    grade = "A+";
+} else if (averageMarks >= 80) {
+    grade = "A";
+} else if (averageMarks >= 70) {
+    grade = "B";
+} else if (averageMarks >= 60) {
+    grade = "C";
+} else if (averageMarks >= 50) {
+    grade = "D";
+} else {
+    grade = "F";
+}
+console.log("Marksheet");
+console.log("English: " + English);
+console.log("Bio: " + Bio);
+console.log("Social_Science: " + Social_Science);
+console.log("Total Marks: " + totalMarks);
+console.log("Average Marks: " + averageMarks);
+console.log("Grade: " + grade);
+    </script>
+</body>
+</html>
